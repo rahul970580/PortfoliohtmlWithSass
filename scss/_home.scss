@@ -1,0 +1,134 @@
+
+
+  /* ------------------------------
+           Home
+  ------------------------------ */
+  
+  .home {
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+
+    &:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      z-index: -1;
+    }
+    .home-banner {
+      text-align: center;
+      margin-top: 15px;
+
+      & h6 {
+        color: #eee;
+        margin-bottom: 25px;
+        font-weight: 400;
+      }
+
+      & h1 {
+        margin-bottom: 25px;
+        color: set-text-color($primary-color);
+        letter-spacing: 0.5px;
+        font-weight: 800;
+        text-align: center;
+      }
+
+      & h1.cd-headline {
+        font-size: 40px;
+        font-weight: 800;
+
+        & span {
+          padding: 0;
+        }
+
+        & .cd-words-wrapper {
+          text-align: center;
+
+          &:after {
+            background-color: transparent;
+          }
+        }
+      }
+
+       p {
+        color: set-text-color($primary-color);
+        margin: auto auto 30px auto;
+      }
+
+       .social-icons {
+        margin-bottom: 30px;
+        z-index: 1;
+        position: relative;
+        
+         li {
+          margin-right: 20px;
+          width: 35px;
+          height: 35px;
+          background-color: rgba(255, 255, 255, 0.1);
+          border-radius: 50%;
+          text-align: center;
+
+           i {
+            color: #eee;
+            line-height: 35px;
+            font-size: 15px;
+
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
+      }  
+      
+     .g-buttons .btn-custom {
+        margin-right: 20px;
+      }
+    }
+
+     .copyright {
+      position: absolute;
+      bottom: 40px;
+      margin: auto;
+      width: 100%;
+
+       span {
+        font-size: 15px;
+        color: #eee;
+        margin-bottom: 0;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+
+        .sel {
+          padding: 0px 4px;
+          opacity: 0.5;
+        }
+      }
+    }
+    
+  } 
+  
+  .home-1:after {
+    opacity: 0;
+  }
+  
+  
+  .home-dark {
+    background-color: #353353;
+  }
+  
+  .home-dark:after {
+    opacity: 0;
+  }
+  

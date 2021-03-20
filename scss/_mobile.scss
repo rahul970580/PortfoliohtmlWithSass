@@ -1,0 +1,225 @@
+
+  /* ------------------------------
+           Responsive 
+  ------------------------------ */
+
+  // Wide Screens
+  @include mediaXl {
+
+  }
+
+  // Desktop & Laptops
+  @include mediaLg {
+    .home-textarea {
+      grid-template-areas:
+      'left-textarea  right-textarea';
+      grid-template-columns: 25% 75%;
+  }
+  //about
+  .wraper{
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+
+    // services
+    .servicesArea {
+      grid-template-columns: 1fr;
+      margin-left: 18px;
+      margin-right: 18px;
+    }
+    //contact
+    .contactArea {
+      grid-template-columns: 1fr;
+      margin-left: 18px;
+      margin-right: 18px;
+    }
+
+    // works
+  
+    
+   
+   
+  
+}
+
+// Tablets & Small laptops
+@include mediaMd {
+
+    .home-textarea {
+        grid-template-areas:
+        'left-textarea  right-textarea';
+        grid-template-columns: 25% 75%;
+    }
+    
+    //about
+      .wraper{
+        margin-left: 50px;
+        margin-right: 50px;
+        } 
+
+
+      .about-subarea {
+        grid-template-columns:  1fr;
+      }
+
+      .sub2-childs{
+        
+        grid-template-columns:  1fr;
+      }
+
+      .work-sub {
+        
+        grid-template-columns:  1fr;
+      }
+      .skills-sub {
+        
+        grid-template-columns:  1fr;
+      }
+
+      // services
+      .servicesArea {
+        grid-template-columns: 1fr;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .services-subarea {
+
+      grid-template-columns:  1fr;
+      }
+
+      .planArea-sub {
+
+      grid-template-columns:  1fr;
+      }
+      .clientsArea-sub {
+
+      grid-template-columns:  1fr;
+      }
+
+      //contact
+     
+      .contactArea {
+        grid-template-columns: 1fr;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .contact-subarea1 {
+      grid-template-columns: 1fr 1fr;
+      }
+      .contact-subarea2 {
+        grid-template-columns: 1fr;
+        }
+
+        //works
+        .portfolio-item {
+          grid-template-columns: 1fr;      
+      }
+}
+
+      // Smart Phones
+      @include mediaSm {
+        .home-textarea {
+          grid-template-areas:
+      'left-textarea'
+      ' right-textarea';
+          grid-template-columns: 1fr;
+      }
+      .home-banner h1.cd-headline {
+        font-size: 30px;
+        
+      }
+      .home-banner p {
+        
+        padding: 6px;
+      }
+      .home-banner .social-icons li {
+        margin-right: 10px;
+      }
+
+      // about
+      .wraper{
+      margin-left: 40px;
+      margin-right: 40px;
+      }
+      .about-subarea {
+
+      grid-template-columns:  1fr;
+      }
+
+      .sub2-childs{
+
+      grid-template-columns:  1fr;
+      }
+
+      .work-sub {
+
+      grid-template-columns:  1fr;
+      }
+      .skills-sub {
+
+      grid-template-columns:  1fr;
+      }
+
+
+      .about-info .g-listes {
+        grid-template-columns: 1fr;
+        display: flow-root;
+      }
+
+
+      .about-info .g-bottom {
+        display: block;
+        text-align: center;
+      }
+
+      ul.social-icons {
+        padding-top: 1rem;
+      }
+
+
+      // servics
+      .servicesArea {
+        grid-template-columns: 1fr;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+      .services-subarea {
+      grid-template-columns:  1fr;
+      }
+
+      .planArea-sub {
+
+      grid-template-columns:  1fr;
+      }
+      .clientsArea-sub {
+
+      grid-template-columns:  1fr;
+      }
+
+      //contact
+      .contactArea {
+        grid-template-columns: 1fr;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+      .contact-subarea1 {
+      grid-template-columns:  1fr;
+      } 
+      .contact-subarea2 {
+        grid-template-columns:  1fr;
+        } 
+
+        .sub {
+          width: 90%;
+        }
+
+        // works
+        .portfolio-item {
+          grid-template-columns: 1fr;
+          margin-left: 10px;
+          margin-right: 10px;      
+      }
+     
+}
+
+  

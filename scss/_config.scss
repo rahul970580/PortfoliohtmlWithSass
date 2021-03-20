@@ -1,0 +1,45 @@
+$primary-color: #35404e ;
+$secondary-color: #f21e4e; 
+
+
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease;
+}
+
+// Set Text Color
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return #515c6a;
+    } @else {
+        @return #ffffff;
+    }
+}
+
+
+ 
+  // Media Query Mixins
+  @mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;         
+    }
+}
+
+@mixin mediaMd {
+   @media screen and (max-width: 768px) {
+       @content;         
+   }
+}
+
+@mixin mediaLg {
+   @media screen and (min-width: 769px) and 
+   (max-width: 1170px) {
+       @content;         
+   }
+}
+
+@mixin mediaXl {
+   @media screen and (min-width: 1171px) {
+       @content;         
+   }
+}
